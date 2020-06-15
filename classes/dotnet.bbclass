@@ -2,7 +2,7 @@ inherit insane
 
 export NUGET_PACKAGES = "${DL_DIR}/.nuget"
 
-RDEPENDS_${PN}+="libsqlite3 libcurl zlib libgssapi-krb5 libssl10"
+RDEPENDS_${PN}+="libsqlite3 libcurl zlib libgssapi-krb5 libssl"
 RDEPENDS_${PN}+="${@'' if d.getVar('RID_PARAMETER') else 'dotnet-source-build'}"
 
 BUILD="${WORKDIR}/build"

@@ -1,13 +1,15 @@
 inherit dotnet
 
 LICENSE="MIT"
-SRC_URI="https://raw.githubusercontent.com/dotnet/templating/release/2.2/LICENSE;downloadfilename=LICENSE-dotnetconsoletemplate"
-LIC_FILES_CHKSUM="file://LICENSE-dotnetconsoletemplate;md5=114cde7d533aa83500070c86cb529bb4"
-SRC_URI[md5sum] = "114cde7d533aa83500070c86cb529bb4"
-SRC_URI[sha256sum] = "715c0e735e3f43b9f9397c5403ed352b913527cf16d820c14e2dceefd8331b44"
+SRC_URI="https://raw.githubusercontent.com/dotnet/templating/v3.1.4/LICENSE;downloadfilename=LICENSE-dotnetconsoletemplate"
+LIC_FILES_CHKSUM="file://LICENSE-dotnetconsoletemplate;md5=9b9b77eef35c4b2667bfd2f93f3d602f"
+SRC_URI[md5sum] = "9b9b77eef35c4b2667bfd2f93f3d602f"
+SRC_URI[sha256sum] = "25626de6ac49462ee7ce16f453746729889615bf5efb9d0b705ae645bd792eff"
 
 S="${WORKDIR}/${PN}"
-RID_PARAMETER = ""
+# RID_PARAMETER = ""
+
+TARGET_FRAMEWORK = "netcoreapp3.1"
 
 do_unpack () {
 	mkdir -p ${WORKDIR}/${PN}
