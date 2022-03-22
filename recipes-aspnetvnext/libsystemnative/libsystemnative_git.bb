@@ -4,7 +4,7 @@ SECTION = "libs"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://COPYING;md5=fe43f7873862a42f1bee07a526a1deac"
 
-SRC_URI = "git://github.com/Tragetaschen/libSystem.Native.git"
+SRC_URI = "git://github.com/Tragetaschen/libSystem.Native.git;protocol=https"
 SRCREV = "${AUTOREV}"
 S = "${WORKDIR}/git"
 
